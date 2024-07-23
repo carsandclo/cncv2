@@ -109,6 +109,7 @@ export type PlasmicItemDetails__OverridesType = {
   careInstruction?: Flex__<"div">;
   proof?: Flex__<"div">;
   link?: Flex__<"div">;
+  sliderCarousel2?: Flex__<typeof SliderWrapper>;
 };
 
 export interface DefaultItemDetailsProps {
@@ -161,6 +162,15 @@ function PlasmicItemDetails__RenderFunc(props: {
         type: "private",
         variableType: "boolean",
         initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "sliderCarousel2.currentSlide",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+
+        refName: "sliderCarousel2",
+        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
     [$props, $ctx, $refs]
@@ -931,6 +941,106 @@ function PlasmicItemDetails__RenderFunc(props: {
           </PlasmicLink__>
         </Stack__>
       </div>
+      {(() => {
+        const child$Props = {
+          arrows: false,
+          autoplay: false,
+          autoplaySpeed: 0,
+          beforeChange: generateStateOnChangePropForCodeComponents(
+            $state,
+            "currentSlide",
+            ["sliderCarousel2", "currentSlide"],
+            SliderWrapper_Helpers
+          ),
+          centerMode: true,
+          className: classNames("__wab_instance", sty.sliderCarousel2),
+          cssEase: "linear",
+          initialSlide: generateStateValueProp($state, [
+            "sliderCarousel2",
+            "currentSlide"
+          ]),
+          ref: ref => {
+            $refs["sliderCarousel2"] = ref;
+          },
+          sliderScopeClassName: sty["sliderCarousel2__slider"],
+          speed: 5000
+        };
+        initializeCodeComponentStates(
+          $state,
+          [
+            {
+              name: "currentSlide",
+              plasmicStateName: "sliderCarousel2.currentSlide"
+            }
+          ],
+          [],
+          SliderWrapper_Helpers ?? {},
+          child$Props
+        );
+
+        return (
+          <SliderWrapper
+            data-plasmic-name={"sliderCarousel2"}
+            data-plasmic-override={overrides.sliderCarousel2}
+            {...child$Props}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__paLBz)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__rnMc)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={{
+                  src: "/plasmic/carsandclo/images/_2Png2.png",
+                  fullWidth: 1200,
+                  fullHeight: 1200,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__xcLmi)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__kAtm)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={{
+                  src: "/plasmic/carsandclo/images/_3Png2.png",
+                  fullWidth: 1200,
+                  fullHeight: 1200,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__cpAu)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__x4Op5)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={{
+                  src: "/plasmic/carsandclo/images/_8Png.png",
+                  fullWidth: 1200,
+                  fullHeight: 1200,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+          </SliderWrapper>
+        );
+      })()}
     </div>
   ) as React.ReactElement | null;
 }
@@ -950,7 +1060,8 @@ const PlasmicDescendants = {
     "cuttingStyle",
     "careInstruction",
     "proof",
-    "link"
+    "link",
+    "sliderCarousel2"
   ],
   slider: ["slider", "sliderCarousel"],
   sliderCarousel: ["sliderCarousel"],
@@ -964,7 +1075,8 @@ const PlasmicDescendants = {
   cuttingStyle: ["cuttingStyle"],
   careInstruction: ["careInstruction"],
   proof: ["proof"],
-  link: ["link"]
+  link: ["link"],
+  sliderCarousel2: ["sliderCarousel2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -984,6 +1096,7 @@ type NodeDefaultElementType = {
   careInstruction: "div";
   proof: "div";
   link: "div";
+  sliderCarousel2: typeof SliderWrapper;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1059,6 +1172,7 @@ export const PlasmicItemDetails = Object.assign(
     careInstruction: makeNodeComponent("careInstruction"),
     proof: makeNodeComponent("proof"),
     link: makeNodeComponent("link"),
+    sliderCarousel2: makeNodeComponent("sliderCarousel2"),
 
     // Metadata about props expected for PlasmicItemDetails
     internalVariantProps: PlasmicItemDetails__VariantProps,
