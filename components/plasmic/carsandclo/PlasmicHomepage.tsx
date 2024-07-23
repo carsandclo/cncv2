@@ -346,7 +346,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.heading
                 )}
               >
-                {"CARS AND CLO X PORSCHE SPRINT CHALLENGE INDONESIA"}
+                {"CARS AND CLO X PORSCHE SPRINT CHALLENGE INDONESIA'S"}
               </div>
               <div
                 data-plasmic-name={"heading4"}
