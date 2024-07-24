@@ -899,7 +899,7 @@ function PlasmicItemDetails__RenderFunc(props: {
             component={Link}
             href={(() => {
               try {
-                return $props.prodProp[0].tokopedia_link;
+                return $props.prodProp[0].shopee_link;
               } catch (e) {
                 if (
                   e instanceof TypeError ||
@@ -985,7 +985,15 @@ function PlasmicItemDetails__RenderFunc(props: {
             data-plasmic-override={overrides.sliderCarousel2}
             {...child$Props}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__paLBz)}>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__paLBz
+              )}
+              component={Link}
+              platform={"nextjs"}
+            >
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__rnMc)}
@@ -1002,7 +1010,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
-            </div>
+            </PlasmicLink__>
             <div className={classNames(projectcss.all, sty.freeBox__xcLmi)}>
               <PlasmicImg__
                 alt={""}

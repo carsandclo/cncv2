@@ -742,6 +742,7 @@
   color: #ffffff;
   font-weight: 500;
   min-width: 0;
+  display: none;
   border-radius: 4px;
   padding: 16px;
 }
@@ -754,7 +755,7 @@
   margin-bottom: 20px;
   min-width: 0;
 }
-.freeBox__paLBz {
+.link__paLBz {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -767,7 +768,7 @@
   padding: 8px;
 }
 @media (min-width: 768px) {
-  .freeBox__paLBz {
+  .link__paLBz {
     align-items: center;
     justify-content: center;
   }
