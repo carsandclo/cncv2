@@ -964,7 +964,7 @@ function PlasmicItemDetails__RenderFunc(props: {
             $refs["sliderCarousel2"] = ref;
           },
           sliderScopeClassName: sty["sliderCarousel2__slider"],
-          speed: 5000
+          speed: 100
         };
         initializeCodeComponentStates(
           $state,
