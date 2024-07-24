@@ -980,7 +980,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.heading5
               )}
             >
-              {"ALL COLLECTIONS"}
+              {"NEW ARRIVALS"}
             </div>
             {(() => {
               const child$Props = {
@@ -1000,6 +1000,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   "sliderCarousel2",
                   "currentSlide"
                 ]),
+                pauseOnHover: false,
                 ref: ref => {
                   $refs["sliderCarousel2"] = ref;
                 },
@@ -1036,7 +1037,11 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"auto"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "desktopOnly")
+                          ? "100%"
+                          : "auto"
+                      }
                       src={{
                         src: "/plasmic/carsandclo/images/_2Png2.png",
                         fullWidth: 1200,
@@ -1056,7 +1061,11 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"auto"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "desktopOnly")
+                          ? "100%"
+                          : "auto"
+                      }
                       src={{
                         src: "/plasmic/carsandclo/images/_3Png2.png",
                         fullWidth: 1200,
@@ -1076,7 +1085,11 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"auto"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "desktopOnly")
+                          ? "100%"
+                          : "auto"
+                      }
                       src={{
                         src: "/plasmic/carsandclo/images/_8Png.png",
                         fullWidth: 1200,

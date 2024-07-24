@@ -959,6 +959,7 @@ function PlasmicItemDetails__RenderFunc(props: {
             "sliderCarousel2",
             "currentSlide"
           ]),
+          pauseOnHover: false,
           ref: ref => {
             $refs["sliderCarousel2"] = ref;
           },
