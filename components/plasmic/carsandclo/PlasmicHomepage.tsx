@@ -110,7 +110,7 @@ export type PlasmicHomepage__OverridesType = {
   semenMerahPutih?: Flex__<"a"> & Partial<LinkProps>;
   siloMaritime?: Flex__<"a"> & Partial<LinkProps>;
   heading5?: Flex__<"div">;
-  sliderCarousel2?: Flex__<typeof SliderWrapper>;
+  sliderCarousel3?: Flex__<typeof SliderWrapper>;
   footer2?: Flex__<"div">;
   logo2?: Flex__<"div">;
   social7?: Flex__<"div">;
@@ -155,12 +155,12 @@ function PlasmicHomepage__RenderFunc(props: {
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
-        path: "sliderCarousel2.currentSlide",
+        path: "sliderCarousel3.currentSlide",
         type: "private",
         variableType: "number",
         initFunc: ({ $props, $state, $queries, $ctx }) => 0,
 
-        refName: "sliderCarousel2",
+        refName: "sliderCarousel3",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
@@ -990,21 +990,21 @@ function PlasmicHomepage__RenderFunc(props: {
                 beforeChange: generateStateOnChangePropForCodeComponents(
                   $state,
                   "currentSlide",
-                  ["sliderCarousel2", "currentSlide"],
+                  ["sliderCarousel3", "currentSlide"],
                   SliderWrapper_Helpers
                 ),
                 centerMode: true,
-                className: classNames("__wab_instance", sty.sliderCarousel2),
+                className: classNames("__wab_instance", sty.sliderCarousel3),
                 cssEase: "linear",
                 initialSlide: generateStateValueProp($state, [
-                  "sliderCarousel2",
+                  "sliderCarousel3",
                   "currentSlide"
                 ]),
                 pauseOnHover: false,
                 ref: ref => {
-                  $refs["sliderCarousel2"] = ref;
+                  $refs["sliderCarousel3"] = ref;
                 },
-                sliderScopeClassName: sty["sliderCarousel2__slider"],
+                sliderScopeClassName: sty["sliderCarousel3__slider"],
                 speed: 100
               };
               initializeCodeComponentStates(
@@ -1012,7 +1012,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 [
                   {
                     name: "currentSlide",
-                    plasmicStateName: "sliderCarousel2.currentSlide"
+                    plasmicStateName: "sliderCarousel3.currentSlide"
                   }
                 ],
                 [],
@@ -1022,26 +1022,29 @@ function PlasmicHomepage__RenderFunc(props: {
 
               return (
                 <SliderWrapper
-                  data-plasmic-name={"sliderCarousel2"}
-                  data-plasmic-override={overrides.sliderCarousel2}
+                  data-plasmic-name={"sliderCarousel3"}
+                  data-plasmic-override={overrides.sliderCarousel3}
                   {...child$Props}
                 >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__vjLi)}
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__te48
+                    )}
+                    component={Link}
+                    href={`/${"engineplus"}`}
+                    platform={"nextjs"}
                   >
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__tCoei)}
+                      className={classNames(sty.img__aqZCo)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "desktopOnly")
-                          ? "100%"
-                          : "auto"
-                      }
+                      displayWidth={"auto"}
                       src={{
                         src: "/plasmic/carsandclo/images/_2Png2.png",
                         fullWidth: 1200,
@@ -1049,23 +1052,26 @@ function PlasmicHomepage__RenderFunc(props: {
                         aspectRatio: undefined
                       }}
                     />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__sEp04)}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__xjLDm
+                    )}
+                    component={Link}
+                    href={`/${"citadel"}`}
+                    platform={"nextjs"}
                   >
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__dNfio)}
+                      className={classNames(sty.img__eUSkQ)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "desktopOnly")
-                          ? "100%"
-                          : "auto"
-                      }
+                      displayWidth={"auto"}
                       src={{
                         src: "/plasmic/carsandclo/images/_3Png2.png",
                         fullWidth: 1200,
@@ -1073,23 +1079,26 @@ function PlasmicHomepage__RenderFunc(props: {
                         aspectRatio: undefined
                       }}
                     />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__iC7Xn)}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link___0XuAn
+                    )}
+                    component={Link}
+                    href={`/${"smp"}`}
+                    platform={"nextjs"}
                   >
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__yecbv)}
+                      className={classNames(sty.img__xtvf)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "desktopOnly")
-                          ? "100%"
-                          : "auto"
-                      }
+                      displayWidth={"auto"}
                       src={{
                         src: "/plasmic/carsandclo/images/_8Png.png",
                         fullWidth: 1200,
@@ -1097,7 +1106,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         aspectRatio: undefined
                       }}
                     />
-                  </div>
+                  </PlasmicLink__>
                 </SliderWrapper>
               );
             })()}
@@ -1422,7 +1431,7 @@ const PlasmicDescendants = {
     "semenMerahPutih",
     "siloMaritime",
     "heading5",
-    "sliderCarousel2",
+    "sliderCarousel3",
     "footer2",
     "logo2",
     "social7",
@@ -1447,7 +1456,7 @@ const PlasmicDescendants = {
     "semenMerahPutih",
     "siloMaritime",
     "heading5",
-    "sliderCarousel2"
+    "sliderCarousel3"
   ],
   navigationBar: ["navigationBar"],
   heading: ["heading"],
@@ -1476,7 +1485,7 @@ const PlasmicDescendants = {
   semenMerahPutih: ["semenMerahPutih"],
   siloMaritime: ["siloMaritime"],
   heading5: ["heading5"],
-  sliderCarousel2: ["sliderCarousel2"],
+  sliderCarousel3: ["sliderCarousel3"],
   footer2: ["footer2", "logo2", "social7", "social5", "social6"],
   logo2: ["logo2"],
   social7: ["social7"],
@@ -1505,7 +1514,7 @@ type NodeDefaultElementType = {
   semenMerahPutih: "a";
   siloMaritime: "a";
   heading5: "div";
-  sliderCarousel2: typeof SliderWrapper;
+  sliderCarousel3: typeof SliderWrapper;
   footer2: "div";
   logo2: "div";
   social7: "div";
@@ -1590,7 +1599,7 @@ export const PlasmicHomepage = Object.assign(
     semenMerahPutih: makeNodeComponent("semenMerahPutih"),
     siloMaritime: makeNodeComponent("siloMaritime"),
     heading5: makeNodeComponent("heading5"),
-    sliderCarousel2: makeNodeComponent("sliderCarousel2"),
+    sliderCarousel3: makeNodeComponent("sliderCarousel3"),
     footer2: makeNodeComponent("footer2"),
     logo2: makeNodeComponent("logo2"),
     social7: makeNodeComponent("social7"),

@@ -780,7 +780,7 @@
 .img__rnMc > picture > img {
   object-fit: cover;
 }
-.freeBox__xcLmi {
+.link__xcLmi {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -799,7 +799,7 @@
 .img__kAtm > picture > img {
   object-fit: cover;
 }
-.freeBox__cpAu {
+.link__cpAu {
   display: flex;
   flex-direction: column;
   position: relative;

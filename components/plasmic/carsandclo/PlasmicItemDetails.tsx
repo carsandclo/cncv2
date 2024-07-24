@@ -992,6 +992,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                 sty.link__paLBz
               )}
               component={Link}
+              href={`/${"engineplus"}`}
               platform={"nextjs"}
             >
               <PlasmicImg__
@@ -1011,7 +1012,16 @@ function PlasmicItemDetails__RenderFunc(props: {
                 }}
               />
             </PlasmicLink__>
-            <div className={classNames(projectcss.all, sty.freeBox__xcLmi)}>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__xcLmi
+              )}
+              component={Link}
+              href={`/${"citadel"}`}
+              platform={"nextjs"}
+            >
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__kAtm)}
@@ -1028,8 +1038,17 @@ function PlasmicItemDetails__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__cpAu)}>
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__cpAu
+              )}
+              component={Link}
+              href={`/${"smp"}`}
+              platform={"nextjs"}
+            >
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__x4Op5)}
@@ -1046,7 +1065,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
-            </div>
+            </PlasmicLink__>
           </SliderWrapper>
         );
       })()}
