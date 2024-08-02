@@ -66,6 +66,7 @@ import {
 } from "@plasmicapp/react-web/lib/data-sources";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+import { PlasmicHead } from "@plasmicapp/react-web";
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
@@ -95,6 +96,7 @@ export type PlasmicHomepage__OverridesType = {
   landingPage?: Flex__<"div">;
   section?: Flex__<"section">;
   navigationBar?: Flex__<typeof NavigationBar>;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   heading?: Flex__<"div">;
   heading4?: Flex__<"div">;
   hero?: Flex__<typeof PlasmicImg__>;
@@ -330,6 +332,15 @@ function PlasmicHomepage__RenderFunc(props: {
                 />
               }
               responsiveBreakpoint={768}
+            />
+
+            <PlasmicHead
+              data-plasmic-name={"pageMetadataOverride"}
+              data-plasmic-override={overrides.pageMetadataOverride}
+              className={classNames("__wab_instance", sty.pageMetadataOverride)}
+              description={"Get ready to rev up your sty;e"}
+              image={"/plasmic/carsandclo/images/asset3Png.png"}
+              title={"Cars and Clo"}
             />
 
             <Stack__
@@ -1416,6 +1427,7 @@ const PlasmicDescendants = {
     "landingPage",
     "section",
     "navigationBar",
+    "pageMetadataOverride",
     "heading",
     "heading4",
     "hero",
@@ -1441,6 +1453,7 @@ const PlasmicDescendants = {
   section: [
     "section",
     "navigationBar",
+    "pageMetadataOverride",
     "heading",
     "heading4",
     "hero",
@@ -1459,6 +1472,7 @@ const PlasmicDescendants = {
     "sliderCarousel3"
   ],
   navigationBar: ["navigationBar"],
+  pageMetadataOverride: ["pageMetadataOverride"],
   heading: ["heading"],
   heading4: ["heading4"],
   hero: ["hero"],
@@ -1499,6 +1513,7 @@ type NodeDefaultElementType = {
   landingPage: "div";
   section: "section";
   navigationBar: typeof NavigationBar;
+  pageMetadataOverride: typeof PlasmicHead;
   heading: "div";
   heading4: "div";
   hero: typeof PlasmicImg__;
@@ -1584,6 +1599,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     navigationBar: makeNodeComponent("navigationBar"),
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     heading: makeNodeComponent("heading"),
     heading4: makeNodeComponent("heading4"),
     hero: makeNodeComponent("hero"),

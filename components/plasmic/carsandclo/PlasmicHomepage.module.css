@@ -136,6 +136,10 @@
     display: none;
   }
 }
+.pageMetadataOverride:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
 .freeBox___1Bk7D {
   display: flex;
   position: relative;

@@ -1193,6 +1193,16 @@
           "id": "bNdAygyI1xq2",
           "name": "12.png",
           "filePath": "../public/plasmic/carsandclo/images/_12Png.png"
+        },
+        {
+          "id": "XH3WCIY55Cr_",
+          "name": "Asset 2@6x.png",
+          "filePath": "../public/plasmic/carsandclo/images/asset26Xpng.png"
+        },
+        {
+          "id": "C8rg8InP1M0f",
+          "name": "Asset 3.png",
+          "filePath": "../public/plasmic/carsandclo/images/asset3Png.png"
         }
       ],
       "indirect": false,
