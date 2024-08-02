@@ -833,7 +833,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                 sty.text__gfd8C
               )}
             >
-              {"Porsche Sprint Challenge Indonesia Official Apparels Partner"}
+              {"Porsche Sprint Challenge Indonesia Official Apparel Partner"}
             </div>
           </Stack__>
           <Stack__
