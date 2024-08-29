@@ -869,31 +869,6 @@ function PlasmicItemDetails__RenderFunc(props: {
               projectcss.all,
               projectcss.a,
               projectcss.__wab_text,
-              sty.link__jw0OQ
-            )}
-            component={Link}
-            href={(() => {
-              try {
-                return $props.prodProp[0].tokopedia_link;
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return undefined;
-                }
-                throw e;
-              }
-            })()}
-            platform={"nextjs"}
-          >
-            {"Tokopedia"}
-          </PlasmicLink__>
-          <PlasmicLink__
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
               sty.link__iE6N7
             )}
             component={Link}
@@ -913,6 +888,31 @@ function PlasmicItemDetails__RenderFunc(props: {
             platform={"nextjs"}
           >
             {"Shopee"}
+          </PlasmicLink__>
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__jw0OQ
+            )}
+            component={Link}
+            href={(() => {
+              try {
+                return $props.prodProp[0].tokopedia_link;
+              } catch (e) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
+                  return undefined;
+                }
+                throw e;
+              }
+            })()}
+            platform={"nextjs"}
+          >
+            {"Tokopedia"}
           </PlasmicLink__>
           <PlasmicLink__
             className={classNames(

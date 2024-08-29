@@ -368,7 +368,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.heading4
                 )}
               >
-                {"GET READY TO REV UP YOUR STYLE"}
+                {"OFFICIAL APPAREL PARTNER"}
               </div>
             </Stack__>
             <PlasmicImg__
