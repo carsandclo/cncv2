@@ -442,8 +442,7 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "3m3vFk1dnCzZnwT8k489Jy",
@@ -638,8 +637,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "gLnoj82AzKVVT7qXiqAbHD",
@@ -732,8 +730,7 @@
           }
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -1203,6 +1200,31 @@
           "id": "C8rg8InP1M0f",
           "name": "Asset 3.png",
           "filePath": "../public/plasmic/carsandclo/images/asset3Png.png"
+        },
+        {
+          "id": "uilyISnfRcT8",
+          "name": "436.png",
+          "filePath": "../public/plasmic/carsandclo/images/_436Png.png"
+        },
+        {
+          "id": "Itgt-YvsHFt7",
+          "name": "4.png",
+          "filePath": "../public/plasmic/carsandclo/images/_4Png.png"
+        },
+        {
+          "id": "MdLGKuqMyrHt",
+          "name": "435.png",
+          "filePath": "../public/plasmic/carsandclo/images/_435Png.png"
+        },
+        {
+          "id": "OS82QPW_xRfs",
+          "name": "438.png",
+          "filePath": "../public/plasmic/carsandclo/images/_438Png.png"
+        },
+        {
+          "id": "9cpxUvfRA1cQ",
+          "name": "437.png",
+          "filePath": "../public/plasmic/carsandclo/images/_437Png.png"
         }
       ],
       "indirect": false,

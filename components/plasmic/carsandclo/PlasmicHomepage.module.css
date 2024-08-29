@@ -1266,6 +1266,31 @@
 .img__aqZCo > picture > img {
   object-fit: cover;
 }
+.link___0T92G {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  .link___0T92G {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.img___8Ym2 {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img___8Ym2 > picture > img {
+  object-fit: cover;
+}
 .link__xjLDm {
   display: flex;
   flex-direction: column;

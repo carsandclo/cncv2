@@ -357,7 +357,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.heading
                 )}
               >
-                {"PORSCHE SPRINT CHALLENGE INDONESIA \nX CARS AND CLO"}
+                {"PORSCHE SPRINT CHALLENGE INDONESIA X CARS AND CLO"}
               </div>
               <div
                 data-plasmic-name={"heading4"}
@@ -1044,12 +1044,39 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__te48
                     )}
                     component={Link}
-                    href={`/${"engineplus"}`}
+                    href={`/${"apriwa"}`}
                     platform={"nextjs"}
                   >
                     <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__aqZCo)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      src={{
+                        src: "/plasmic/carsandclo/images/_436Png.png",
+                        fullWidth: 1200,
+                        fullHeight: 1200,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link___0T92G
+                    )}
+                    component={Link}
+                    href={`/${"engineplus"}`}
+                    platform={"nextjs"}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___8Ym2)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -1084,7 +1111,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayMinWidth={"0"}
                       displayWidth={"auto"}
                       src={{
-                        src: "/plasmic/carsandclo/images/_3Png2.png",
+                        src: "/plasmic/carsandclo/images/_435Png.png",
                         fullWidth: 1200,
                         fullHeight: 1200,
                         aspectRatio: undefined

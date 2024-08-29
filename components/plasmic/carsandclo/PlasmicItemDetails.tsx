@@ -109,7 +109,7 @@ export type PlasmicItemDetails__OverridesType = {
   careInstruction?: Flex__<"div">;
   proof?: Flex__<"div">;
   link?: Flex__<"div">;
-  sliderCarousel2?: Flex__<typeof SliderWrapper>;
+  sliderCarousel3?: Flex__<typeof SliderWrapper>;
 };
 
 export interface DefaultItemDetailsProps {
@@ -164,12 +164,12 @@ function PlasmicItemDetails__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => false
       },
       {
-        path: "sliderCarousel2.currentSlide",
+        path: "sliderCarousel3.currentSlide",
         type: "private",
         variableType: "number",
         initFunc: ({ $props, $state, $queries, $ctx }) => 0,
 
-        refName: "sliderCarousel2",
+        refName: "sliderCarousel3",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
@@ -949,21 +949,21 @@ function PlasmicItemDetails__RenderFunc(props: {
           beforeChange: generateStateOnChangePropForCodeComponents(
             $state,
             "currentSlide",
-            ["sliderCarousel2", "currentSlide"],
+            ["sliderCarousel3", "currentSlide"],
             SliderWrapper_Helpers
           ),
           centerMode: true,
-          className: classNames("__wab_instance", sty.sliderCarousel2),
+          className: classNames("__wab_instance", sty.sliderCarousel3),
           cssEase: "linear",
           initialSlide: generateStateValueProp($state, [
-            "sliderCarousel2",
+            "sliderCarousel3",
             "currentSlide"
           ]),
           pauseOnHover: false,
           ref: ref => {
-            $refs["sliderCarousel2"] = ref;
+            $refs["sliderCarousel3"] = ref;
           },
-          sliderScopeClassName: sty["sliderCarousel2__slider"],
+          sliderScopeClassName: sty["sliderCarousel3__slider"],
           speed: 100
         };
         initializeCodeComponentStates(
@@ -971,7 +971,7 @@ function PlasmicItemDetails__RenderFunc(props: {
           [
             {
               name: "currentSlide",
-              plasmicStateName: "sliderCarousel2.currentSlide"
+              plasmicStateName: "sliderCarousel3.currentSlide"
             }
           ],
           [],
@@ -981,23 +981,23 @@ function PlasmicItemDetails__RenderFunc(props: {
 
         return (
           <SliderWrapper
-            data-plasmic-name={"sliderCarousel2"}
-            data-plasmic-override={overrides.sliderCarousel2}
+            data-plasmic-name={"sliderCarousel3"}
+            data-plasmic-override={overrides.sliderCarousel3}
             {...child$Props}
           >
             <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
-                sty.link__paLBz
+                sty.link__uLnhb
               )}
               component={Link}
-              href={`/${"engineplus"}`}
+              href={`/${"jvs"}`}
               platform={"nextjs"}
             >
               <PlasmicImg__
                 alt={""}
-                className={classNames(sty.img__rnMc)}
+                className={classNames(sty.img__ibJko)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
@@ -1005,7 +1005,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={"auto"}
                 src={{
-                  src: "/plasmic/carsandclo/images/_2Png2.png",
+                  src: "/plasmic/carsandclo/images/_437Png.png",
                   fullWidth: 1200,
                   fullHeight: 1200,
                   aspectRatio: undefined
@@ -1016,15 +1016,15 @@ function PlasmicItemDetails__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.a,
-                sty.link__xcLmi
+                sty.link__w2N73
               )}
               component={Link}
-              href={`/${"citadel"}`}
+              href={`/${"apriwa"}`}
               platform={"nextjs"}
             >
               <PlasmicImg__
                 alt={""}
-                className={classNames(sty.img__kAtm)}
+                className={classNames(sty.img__vtLK)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
@@ -1032,7 +1032,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={"auto"}
                 src={{
-                  src: "/plasmic/carsandclo/images/_3Png2.png",
+                  src: "/plasmic/carsandclo/images/_436Png.png",
                   fullWidth: 1200,
                   fullHeight: 1200,
                   aspectRatio: undefined
@@ -1043,7 +1043,7 @@ function PlasmicItemDetails__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.a,
-                sty.link__cpAu
+                sty.link__wr5Ej
               )}
               component={Link}
               href={`/${"smp"}`}
@@ -1051,7 +1051,7 @@ function PlasmicItemDetails__RenderFunc(props: {
             >
               <PlasmicImg__
                 alt={""}
-                className={classNames(sty.img__x4Op5)}
+                className={classNames(sty.img__e58E)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
@@ -1060,6 +1060,33 @@ function PlasmicItemDetails__RenderFunc(props: {
                 displayWidth={"auto"}
                 src={{
                   src: "/plasmic/carsandclo/images/_8Png.png",
+                  fullWidth: 1200,
+                  fullHeight: 1200,
+                  aspectRatio: undefined
+                }}
+              />
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__o08Ds
+              )}
+              component={Link}
+              href={`/${"citadel"}`}
+              platform={"nextjs"}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img___0TBys)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={{
+                  src: "/plasmic/carsandclo/images/_435Png.png",
                   fullWidth: 1200,
                   fullHeight: 1200,
                   aspectRatio: undefined
@@ -1089,7 +1116,7 @@ const PlasmicDescendants = {
     "careInstruction",
     "proof",
     "link",
-    "sliderCarousel2"
+    "sliderCarousel3"
   ],
   slider: ["slider", "sliderCarousel"],
   sliderCarousel: ["sliderCarousel"],
@@ -1104,7 +1131,7 @@ const PlasmicDescendants = {
   careInstruction: ["careInstruction"],
   proof: ["proof"],
   link: ["link"],
-  sliderCarousel2: ["sliderCarousel2"]
+  sliderCarousel3: ["sliderCarousel3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1124,7 +1151,7 @@ type NodeDefaultElementType = {
   careInstruction: "div";
   proof: "div";
   link: "div";
-  sliderCarousel2: typeof SliderWrapper;
+  sliderCarousel3: typeof SliderWrapper;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1200,7 +1227,7 @@ export const PlasmicItemDetails = Object.assign(
     careInstruction: makeNodeComponent("careInstruction"),
     proof: makeNodeComponent("proof"),
     link: makeNodeComponent("link"),
-    sliderCarousel2: makeNodeComponent("sliderCarousel2"),
+    sliderCarousel3: makeNodeComponent("sliderCarousel3"),
 
     // Metadata about props expected for PlasmicItemDetails
     internalVariantProps: PlasmicItemDetails__VariantProps,
